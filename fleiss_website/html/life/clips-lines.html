@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clips & Lines from Movies - Fleiß</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">Fleiß <span>{Film & Life}</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cinema/index.html">Cinema & Philosophy</a></li>
+        <li><a href="index.html" class="active">Life & Reflections</a></li>
+        <li><a href="../creativity/index.html">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn btn-secondary">← Back to Life & Reflections</a>
+    <h2 style="margin-top: 1rem;">Clips & Lines from Movies</h2>
+    <div class="form-group">
+      <input type="text" id="quote-search" placeholder="Search quotes by theme or movie..." onkeyup="filterQuotes()">
+      <p>Choose <strong>Play audio</strong> to hear a quote, or <strong>Watch clip</strong> to find its movie scene.</p>
+    </div>
+    <div class="grid-container" id="quotes-container">
+      <div class="card quote-card">
+        <p><em>"Carpe diem. Seize the day, boys. Make your lives extraordinary."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Dead Poets Society</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"In case I don't see ya, good afternoon, good evening, and good night!"</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Truman Show</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Just keep swimming."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Finding Nemo</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"To infinity and beyond!"</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Toy Story</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Ogres are like onions."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Shrek</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Oh yes, the past can hurt."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Lion King</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"The flower that blooms in adversity is the most rare and beautiful of all."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Mulan</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"We'll always have Paris."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Casablanca</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"There's no place like home."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Wizard of Oz</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Life is like a box of chocolates."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Forrest Gump</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"There is no spoon."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Matrix</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"May the Force be with you."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Star Wars</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"You shall not pass!"</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Lord of the Rings: The Fellowship of the Ring</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"I'll be back."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Terminator</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"You're gonna need a bigger boat."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Jaws</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Don't ever let somebody tell you you can't do something."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Pursuit of Happyness</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"It ain't about how hard you hit; it's about how hard you can get hit and keep moving forward."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Rocky Balboa</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"You is kind, you is smart, you is important."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Help</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"It is our choices, Harry, that show what we truly are, far more than our abilities."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Harry Potter and the Chamber of Secrets</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Hope is a good thing, maybe the best of things, and no good thing ever dies."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Shawshank Redemption</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"It's supposed to be hard. If it wasn't hard, everyone would do it. The hard is what makes it great."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— A League of Their Own</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Do or do not. There is no try."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— Star Wars: The Empire Strikes Back</p>
+      </div>
+      <div class="card quote-card">
+        <p><em>"Even the smallest person can change the course of the future."</em></p>
+        <p style="color: var(--card-text); font-size: 0.9rem;">— The Lord of the Rings: The Fellowship of the Ring</p>
+      </div>
+    </div>
+
+    <section class="movie-clips" aria-labelledby="movie-clips-heading">
+      <h3 id="movie-clips-heading">Official Movie Trailers</h3>
+      <p>Watch a few previews, then search by movie title or theme above to find a quote.</p>
+      <div class="grid-container">
+        <article class="card clip-card">
+          <h3>Spirited Away</h3>
+          <div class="video-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/fDUFP7EeXLE" title="Spirited Away official English trailer by GKIDS Films" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </article>
+        <article class="card clip-card">
+          <h3>Princess Mononoke</h3>
+          <div class="video-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/vf6c6n35wr4" title="Princess Mononoke official English trailer by GKIDS Films" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </article>
+        <article class="card clip-card">
+          <h3>My Neighbor Totoro</h3>
+          <div class="video-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/HaLISMAGdOE" title="My Neighbor Totoro official English trailer by GKIDS Films" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Film, Life and Everything In Between {Fleiß}.</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

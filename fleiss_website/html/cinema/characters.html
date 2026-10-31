@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Characters - Fleiß</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">Fleiß <span>{Film & Life}</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Cinema & Philosophy</a></li>
+        <li><a href="../life/index.html">Life & Reflections</a></li>
+        <li><a href="../creativity/index.html">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn btn-secondary">← Back to Cinema & Philosophy</a>
+    <h2 style="margin-top: 1rem;">Explore Characters</h2>
+    <p>Click on a character to learn about their archetype and inner struggle.</p>
+
+    <div class="grid-container" id="character-catalog">
+      <div class="card" data-film="Dead Poets Society" onclick="showModal('John Keating (Dead Poets Society)', 'Encourages students to think independently and challenge rigid institutional norms.')">
+        <h3>John Keating</h3>
+        <p>Archetype: The Mentor / Catalyst</p>
+      </div>
+      <div class="card" data-film="The Truman Show" onclick="showModal('Truman Burbank (The Truman Show)', 'Represents the human spirit yearning for authentic truth over comfortable illusion.')">
+        <h3>Truman Burbank</h3>
+        <p>Archetype: The Truth-Seeker</p>
+      </div>
+      <div class="card" data-film="Spirited Away" onclick="showModal('Chihiro (Spirited Away)', 'A resourceful young girl who grows more confident as she faces uncertainty and learns to care for others.')">
+        <h3>Chihiro</h3>
+        <p>Archetype: The Reluctant Hero</p>
+      </div>
+      <div class="card" data-film="Good Will Hunting" onclick="showModal('Will Hunting (Good Will Hunting)', 'A brilliant but guarded young man learns that accepting help and facing painful truths can open the way to change.')">
+        <h3>Will Hunting</h3>
+        <p>Archetype: The Wounded Prodigy</p>
+      </div>
+      <div class="card" data-film="Everything Everywhere All at Once" onclick="showModal('Evelyn Wang (Everything Everywhere All at Once)', 'An overwhelmed laundromat owner finds strength by recognizing the value of compassion across many versions of her life.')">
+        <h3>Evelyn Wang</h3>
+        <p>Archetype: The Unexpected Hero</p>
+      </div>
+      <div class="card" data-film="The Shawshank Redemption" onclick="showModal('Andy Dufresne (The Shawshank Redemption)', 'A patient and determined prisoner holds on to hope and uses his skills to build a future beyond the limits imposed on him.')">
+        <h3>Andy Dufresne</h3>
+        <p>Archetype: The Quiet Strategist</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h2 id="modal-title">Details</h2>
+      <p id="modal-body"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Film, Life and Everything In Between {Fleiß}.</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

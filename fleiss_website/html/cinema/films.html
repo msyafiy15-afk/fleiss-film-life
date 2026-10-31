@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Films - Fleiß</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">Fleiß <span>{Film & Life}</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Cinema & Philosophy</a></li>
+        <li><a href="../life/index.html">Life & Reflections</a></li>
+        <li><a href="../creativity/index.html">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn btn-secondary">← Back to Cinema & Philosophy</a>
+    <h2 style="margin-top: 1rem;">Explore Films</h2>
+    <p>Click on any film to view details and philosophical context.</p>
+
+    <div class="grid-container" id="film-catalog">
+      <div class="card" onclick="showModal('The Truman Show', 'A poignant exploration of simulated reality, personal autonomy, and the existential courage required to step into the unknown.')">
+        <h3>The Truman Show</h3>
+        <p>Theme: Reality & Free Will</p>
+      </div>
+      <div class="card" onclick="showModal('Dead Poets Society', 'A timeless classic reflecting on Carpe Diem, conformity, and finding individual voice through poetry and expression.')">
+        <h3>Dead Poets Society</h3>
+        <p>Theme: Individualism & Expression</p>
+      </div>
+      <div class="card" onclick="showModal('Little Miss Sunshine', 'An inspiring look into family dynamics, unconventional success, and embracing failure as part of human growth.')">
+        <h3>Little Miss Sunshine</h3>
+        <p>Theme: Perfectionism & Family</p>
+      </div>
+      <div class="card" onclick="showModal('Spirited Away', 'Chihiro’s journey through a strange spirit world explores courage, identity, greed, and the importance of remembering who you are.')">
+        <h3>Spirited Away</h3>
+        <p>Theme: Identity & Courage</p>
+      </div>
+      <div class="card" onclick="showModal('Good Will Hunting', 'A gifted young man confronts the defenses that keep him from trusting others, asking how honesty and connection can help us grow.')">
+        <h3>Good Will Hunting</h3>
+        <p>Theme: Vulnerability & Growth</p>
+      </div>
+      <div class="card" onclick="showModal('Everything Everywhere All at Once', 'A woman facing the many possibilities of her life discovers meaning through attention, kindness, and her relationships with family.')">
+        <h3>Everything Everywhere All at Once</h3>
+        <p>Theme: Meaning & Connection</p>
+      </div>
+      <div class="card" onclick="showModal('The Shawshank Redemption', 'Through friendship and hardship, the film considers hope as a source of inner freedom and endurance.')">
+        <h3>The Shawshank Redemption</h3>
+        <p>Theme: Hope & Resilience</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h2 id="modal-title">Details</h2>
+      <p id="modal-body"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Film, Life and Everything In Between {Fleiß}.</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

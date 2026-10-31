@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Matcher - Fleiß</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">Fleiß <span>{Film & Life}</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cinema/index.html">Cinema & Philosophy</a></li>
+        <li><a href="index.html" class="active">Life & Reflections</a></li>
+        <li><a href="../creativity/index.html">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn btn-secondary">← Back to Life & Reflections</a>
+    <h2 style="margin-top: 1rem;">Character Matcher</h2>
+    <div class="card" style="cursor: default;">
+      <div class="form-group">
+        <fieldset class="choice-group">
+          <legend>What trait or situation resonates with you today?</legend>
+          <div class="choice-list">
+            <label class="choice-option"><input type="checkbox" name="trait" value="creative"> Creative</label>
+            <label class="choice-option"><input type="checkbox" name="trait" value="brave"> Brave</label>
+            <label class="choice-option"><input type="checkbox" name="trait" value="caring"> Caring</label>
+            <label class="choice-option"><input type="checkbox" name="trait" value="independent"> Independent</label>
+            <label class="choice-option"><input type="checkbox" name="trait" value="curious"> Curious</label>
+            <label class="choice-option"><input type="checkbox" name="trait" value="ambitious"> Ambitious</label>
+          </div>
+        </fieldset>
+      </div>
+        <button class="btn" onclick="matchCharacter()">Find Character Matches</button>
+      <div id="character-match-result" class="result-box"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Film, Life and Everything In Between {Fleiß}.</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

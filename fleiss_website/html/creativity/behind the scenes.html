@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behind the Scenes - Fleiß</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">Fleiß <span>{Film & Life}</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cinema/index.html">Cinema & Philosophy</a></li>
+        <li><a href="../life/index.html">Life & Reflections</a></li>
+        <li><a href="index.html" class="active">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn btn-secondary">← Back to Creativity</a>
+    <h2 style="margin-top: 1rem;">Behind the Scenes</h2>
+    <p>Explore the craft choices that shape each film. These viewing prompts are observations to look for, not claims about how a production was made.</p>
+    <div class="form-group">
+      <label for="craft-search">Find a film or craft idea</label>
+      <input type="text" id="craft-search" oninput="filterCraftNotes()" placeholder="Search films, color, camera, editing...">
+    </div>
+    <div class="grid-container" id="film-craft-catalog"></div>
+    <div class="grid-container">
+      <div class="card" onclick="showModal('Visual Storytelling & Color Theory', 'How directors use specific color palettes to reflect character mental states without dialogue.')">
+        <h3>Visual Storytelling</h3>
+        <p>Exploring color palettes and camera angles.</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h2 id="modal-title">Details</h2>
+      <p id="modal-body"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Film, Life and Everything In Between {Fleiß}.</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

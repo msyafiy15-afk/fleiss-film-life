@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storytelling & Philosophy - Fleiß</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Fleiß <span>{Film & Life}</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cinema-philosophy.html" class="active">Cinema & Philosophy</a></li>
+        <li><a href="life-reflections.html">Life & Reflections</a></li>
+        <li><a href="creativity.html">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="cinema-philosophy.html" class="btn btn-secondary">← Back to Cinema & Philosophy</a>
+    <h2 style="margin-top: 1rem;">Storytelling & Philosophy</h2>
+
+    <div class="grid-container">
+      <div class="card" onclick="showModal('The Absurdist Narrative', 'Films that use absurd premises to critique societal constructs and inspire individual purpose.')">
+        <h3>The Absurdist Narrative</h3>
+        <p>Detailed analysis of existentialism in modern cinema.</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h2 id="modal-title">Details</h2>
+      <p id="modal-body"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Film, Life and Everything In Between {Fleiß}.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

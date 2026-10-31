@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Matcher - Fleiß</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">Fleiß <span>{Film & Life}</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cinema/index.html">Cinema & Philosophy</a></li>
+        <li><a href="index.html" class="active">Life & Reflections</a></li>
+        <li><a href="../creativity/index.html">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn btn-secondary">← Back to Life & Reflections</a>
+    <h2 style="margin-top: 1rem;">Film Matcher</h2>
+    <div class="card" style="cursor: default;">
+      <div class="form-group">
+        <fieldset class="choice-group">
+          <legend>How are you feeling right now?</legend>
+          <div class="choice-list">
+            <label class="choice-option"><input type="checkbox" name="emotion" value="happy"> Happy</label>
+            <label class="choice-option"><input type="checkbox" name="emotion" value="sad"> Sad</label>
+            <label class="choice-option"><input type="checkbox" name="emotion" value="stressed"> Stressed</label>
+            <label class="choice-option"><input type="checkbox" name="emotion" value="lonely"> Lonely</label>
+            <label class="choice-option"><input type="checkbox" name="emotion" value="curious"> Curious</label>
+            <label class="choice-option"><input type="checkbox" name="emotion" value="hopeful"> Hopeful</label>
+          </div>
+        </fieldset>
+      </div>
+        <button class="btn" onclick="matchFilm()">Find Matching Films</button>
+      <div id="film-match-result" class="result-box"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Film, Life and Everything In Between {Fleiß}.</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
